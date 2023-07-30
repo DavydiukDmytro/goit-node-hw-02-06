@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const { User } = require('../../models');
 const gravatar = require('gravatar');
 const { nanoid } = require('nanoid');
-const { sendEmail, messageLayout } = require('../../helpers');
+const { sendEmail, messageLayout } = require('../../services/email');
 
 const register = async (req, res, next) => {
 	const { email, password } = req.body;

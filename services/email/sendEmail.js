@@ -8,7 +8,6 @@ async function sendEmail({ to, subject, html }) {
 		to,
 		subject,
 		html,
-		// text: 'Привіт. Ми тестуємо надсилання листів!',
 	};
 
 	const transport = nodemailer.createTransport({
